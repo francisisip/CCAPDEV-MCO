@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&family=Cherry+Bomb+One&display=swap');
+
+:root{
+    --primary: beige;
+    --secondary: black;
+    --heading: 'Cherry Bomb One', cursive;
+    --subheading: 'Abhaya Libre', serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#left-box {
+    background-color: beige;
+    border-right: inset 5px black;
+    width: 35%;
+}
+
+#right-box {
+    background-color: white;
+    width: 65%;
+    padding: 20px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.egg {
+    width: 250px;
+}
+
+.omsilog {
+    font-family: var(--heading);
+    font-size: 105px;
+    letter-spacing: 0.2ch;
+}
+
+.form {
+    font-family: var(--subheading);
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin-left: 25px;
+}
+
+.form div {
+    margin: 30px;
+    font-weight: 700;
+}
+
+.username {
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    width: 600px;
+    border-style: solid;
+    border-color: rgb(100, 100, 100);
+    border-width: 2px;
+    border-radius: 5px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-left: 15px;
+}
+
+.login {
+    background-color: rgb(46, 164, 79);
+    color: white;
+    height: 40px;
+    width: 130px;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 55px;
+    transition: box-shadow 0.25s;
+}
+
+.login:hover {
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.15);
+}
+
+.submit {
+    display: flex;
+    align-items: center;
+    font-family: var(--subheading);
+    margin-top: 15px;
+}
+
+.forgot {
+    margin-left: 420px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.forgot:hover {
+    color: rgb(100, 100, 100);
+}
+
+.signin-option {
+    display: flex;
+    align-items: center;
+    font-family: var(--subheading);
+    margin-top: 60px;
+    margin-left: 55px;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 30px;
+    margin-right: 20px;
+    border: solid 1px rgb(93,93,93);
+    padding: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.logo:hover {
+    background-color: rgb(100, 100, 100, 0.3);
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    margin-left: 310px;
+    font-size: 14px;
+}
+
+.register a {
+    margin-left: 75px;
+    cursor: pointer;
+}
+
+.register a:hover {
+    color: rgb(100, 100, 100);
+}
