@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&family=Cherry+Bomb+One&display=swap');
 
 :root {
-    --primary: rgb(46, 164, 79);
+    --primary: rgb(119, 194, 33);
     --secondary: white;
     --heading: 'Cherry Bomb One', cursive;
     --subheading: 'Abhaya Libre', serif;
@@ -10,6 +10,8 @@
 body {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 a, a:visited, a:hover, a:active {
@@ -23,7 +25,7 @@ input[type=text] {
 }
 
 header {
-    background-color: var(--primary);
+    background-color: black;
     font-family: var(--subheading);
     font-size: 17px;
     font-weight: 700;
@@ -36,9 +38,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 100px;
-    margin-left: 130px;
-    padding: 12px;
+    margin-right: 175px;
+    margin-left: 250px;
+    padding: 20px;
 }
 
 .home {
@@ -65,21 +67,140 @@ nav {
 }
 
 .lp {
-    padding: 22px;
+    padding: 30px;
 }
 
 .nav-right > a:hover {
-    background-color: rgb(62, 62, 62, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     cursor: pointer;
 }
 
 .search {
     margin-right: 20px;
-    width: 350px;
+    width: 250px;
     border-style: solid;
     border-color: rgb(100, 100, 100);
     border-width: 2px;
     border-radius: 20px;
     padding-top: 9px;
     padding-bottom: 9px;
+}
+
+#post-title {
+    background-color: var(--primary);
+    font-family: var(--subheading);
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    padding-left: 205px;
+}
+
+.title {
+    font-size: 56px;
+}
+
+#box {
+    display: flex;
+    flex-direction: column;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    padding: 50px;
+    margin: auto;
+    width: 68vw;
+    margin-top: 30px;
+    font-family: var(--subheading);
+}
+
+.username {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.up {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+	border-radius: 50%;
+	background-color: #FAFAFA;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.down {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.down span {
+    margin-right: 5px;
+}
+
+.buttons {
+    margin-bottom: 5px;
+}
+
+.upvote {
+    display: inline-block;
+    background-image: url(../images/upvote.png);
+    background-position: 0px 0px;
+    width: 30px;
+    height: 30px;
+    background-size: 65px 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.upvote:hover {
+    background-position: -34px 0px;
+}
+
+.downvote {
+    display: inline-block;
+    background-image: url(../images/downvote.png);
+    background-position: 0px 0px;
+    width: 30px;
+    height: 30px;
+    background-size: 65px 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.downvote:hover {
+    background-position: -31px 0px;
+}
+
+.save {
+	display: inline-block;
+    background-image: url(../images/save.png);
+    background-position: 0px 0px;
+    width: 30px;
+    height: 30px;
+    background-size: 65px 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.save:hover{
+    background-position: -35px 0px;
+}
+
+.reply {
+    font-weight: 700;
 }
