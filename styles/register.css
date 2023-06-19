@@ -16,7 +16,6 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    font-family: var(--subheading);
 }
 
 #main-box {
@@ -46,12 +45,11 @@ body {
 .title {
     display: flex;
     align-items: center;
-    margin-top: 45px;
+    margin-top: 15px;
 }
 
 .egg {
     position: absolute;
-    top: 30px;
     right: 100px;
     width: 200px;
     border-radius: 50%;
@@ -76,7 +74,7 @@ body {
 }
 
 .form div {
-    margin-top: 30px;
+    margin-top: 20px;
     font-weight: 700;
 }
 
@@ -87,6 +85,7 @@ body {
 
 .input {
     width: 300px;
+    font-family: var(--subheading);
     font-size: 16px;
     border-style: solid;
     border-color: rgb(100, 100, 100);
@@ -106,6 +105,11 @@ input[type=password] {
     box-sizing: border-box;
 }
 
+input[type=email] {
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
 .submit {
     display: flex;
     flex-direction: column;
@@ -114,7 +118,7 @@ input[type=password] {
     margin-top: 30px;
 }
 
-.login {
+.register {
     background-color: rgb(46, 164, 79);
     color: white;
     height: 40px;
@@ -127,7 +131,7 @@ input[type=password] {
     transition: box-shadow 0.25s;
 }
 
-.login:hover {
+.register:hover {
     font-weight: 700;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
     background-color: rgba(46, 164, 79, 0.97);
@@ -136,12 +140,11 @@ input[type=password] {
 .forgot {
     font-size: 14px;
     margin-top: 10px;
-    color: black;
     cursor: pointer;
 }
 
 .forgot:hover {
-    color: rgba(0,0,0,0.8)
+    color: rgba(0, 0, 0, 0.8);
 }
 
 .siw {
@@ -170,25 +173,25 @@ input[type=password] {
     border: solid 1px rgb(93,93,93);
     padding: 10px;
     border-radius: 50px;
-    cursor: pointer ;
+    cursor: pointer;
 }
 
 .logo:hover {
     background-color: rgb(100, 100, 100, 0.3);
 }
 
-.register {
+.login {
     display: flex;
     font-size: 14px;
     margin-top: 25px;
 }
 
-.register a {
+.login a {
     margin-left: 5px;
     color: rgb(12, 134, 47);
     cursor: pointer;
 }
 
-.register a:hover {
+.login a:hover {
     color: rgb(12, 134, 47, 0.8);
 }

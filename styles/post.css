@@ -109,10 +109,11 @@ nav {
     flex-direction: column;
     background-color: #d9d9d9;
     border-radius: 5px;
-    padding: 50px;
+    padding: 40px;
     margin: auto;
     width: 68vw;
     margin-top: 30px;
+    margin-bottom: 30px;
     font-family: var(--subheading);
 }
 
@@ -124,13 +125,13 @@ nav {
 
 .up {
     display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+    align-items: flex-start;
+    margin-bottom: 20px;
 }
 
 .icon {
-    width: 70px;
-    height: 70px;
+    width: 75px;
+    height: 75px;
     padding: 5px;
 	border-radius: 50%;
 	background-color: #FAFAFA;
@@ -149,7 +150,7 @@ nav {
 }
 
 .down span {
-    margin-right: 5px;
+    margin-right: 4px;
 }
 
 .buttons {
@@ -160,45 +161,45 @@ nav {
     display: inline-block;
     background-image: url(../images/upvote.png);
     background-position: 0px 0px;
-    width: 30px;
+    width: 25px;
     height: 30px;
-    background-size: 65px 30px;
+    background-size: 50px 25px;
     background-repeat: no-repeat;
     cursor: pointer;
 }
 
 .upvote:hover {
-    background-position: -34px 0px;
+    background-position: -26px 0px;
 }
 
 .downvote {
     display: inline-block;
     background-image: url(../images/downvote.png);
     background-position: 0px 0px;
-    width: 30px;
+    width: 25px;
     height: 30px;
-    background-size: 65px 30px;
+    background-size: 50px 25px;
     background-repeat: no-repeat;
     cursor: pointer;
 }
 
 .downvote:hover {
-    background-position: -31px 0px;
+    background-position: -24px 0px;
 }
 
 .save {
 	display: inline-block;
     background-image: url(../images/save.png);
     background-position: 0px 0px;
-    width: 30px;
+    width: 25px;
     height: 30px;
-    background-size: 65px 30px;
+    background-size: 50px 25px;
     background-repeat: no-repeat;
     cursor: pointer;
 }
 
 .save:hover{
-    background-position: -35px 0px;
+    background-position: -25px 0px;
 }
 
 .reply {
