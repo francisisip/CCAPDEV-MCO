@@ -135,13 +135,14 @@ input[type=password] {
 
 .forgot {
     font-size: 14px;
+    font-weight: lighter;
     margin-top: 10px;
     color: black;
     cursor: pointer;
 }
 
 .forgot:hover {
-    color: rgba(0,0,0,0.8)
+    color: rgba(0,0,0,0.85)
 }
 
 .siw {
