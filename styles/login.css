@@ -85,14 +85,13 @@ body {
     font-size: 20px;
 }
 
-.form div {
+.username {
     margin-top: 30px;
-    font-weight: 700;
+    margin-bottom: 30px;
 }
 
-.username {
-    display: flex;
-    align-items: center;
+.password {
+    margin-bottom: 20px;
 }
 
 .input {
@@ -121,7 +120,7 @@ input[type=password] {
     flex-direction: column;
     align-items: center;
     font-family: var(--subheading);
-    margin-top: 30px;
+    margin-top: 5px;
 }
 
 .login {
@@ -202,4 +201,10 @@ input[type=password] {
 
 .register a:hover {
     color: rgb(12, 134, 47, 0.8);
+}
+
+.xyz {
+    font-size: 14px;
+    font-family: var(--subheading);
+    font-weight: lighter;
 }
