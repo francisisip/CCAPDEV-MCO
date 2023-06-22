@@ -58,18 +58,7 @@ nav {
     
 }
 
-.home {
-    display: flex;
-    align-items: center;
-}
 
-.logo {
-
-    text-decoration: none;
-    color: #fff;
-    display: flex;
-    align-items: center;
-}
 
 .egg {
   width: 100px;

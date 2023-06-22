@@ -14,9 +14,6 @@ a, a:visited, a:hover, a:active {
 body {
     width: 100vw;
     height: 100vh;
-    margin: 0;
-    padding: 0;
-    font-family: var(--subheading);
 }
 
 #main-box {
@@ -25,8 +22,6 @@ body {
 }
 
 #left-box {
-    background-color: beige;
-    /* border-right: inset 5px black; */
     width: 35%;
 }
 
@@ -45,14 +40,12 @@ body {
     flex-direction: column;
     align-items: center;
     width: 65%;
-    padding: 15px 15px 15px 15px;
+    padding: 15px;
 }
 
-.image {
-    position: relative;
+.page-logo {
     display: inherit;
     justify-content: center;
-    align-items: center;
     margin-top: 50px;
 }
 
@@ -60,25 +53,7 @@ body {
     width: 50%;
 }
 
-.title {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.egg {
-    position: absolute;
-    top: 5px;
-    right: 100px;
-    width: 200px;
-    border-radius: 50%;
-}
-
-.o {
-    color: white;
-}
-
-.form {
+.inputs {
     font-family: var(--subheading);
     display: flex;
     flex-direction: column;
@@ -92,6 +67,12 @@ body {
 
 .password {
     margin-bottom: 20px;
+}
+
+.remember-me {
+    font-size: 14px;
+    font-family: var(--subheading);
+    font-weight: lighter;
 }
 
 .input {
@@ -154,7 +135,7 @@ input[type=password] {
     color: rgba(0,0,0,0.85)
 }
 
-.siw {
+.sign-in-with {
     font-family: var(--subheading);
     font-size: 14px;
     margin-top: 20px;
@@ -188,23 +169,16 @@ input[type=password] {
 }
 
 .register {
-    display: flex;
     font-size: 14px;
     margin-top: 25px;
 }
 
 .register a {
-    margin-left: 5px;
+    margin-left: 2px;
     color: rgb(12, 134, 47);
     cursor: pointer;
 }
 
 .register a:hover {
     color: rgb(12, 134, 47, 0.8);
-}
-
-.xyz {
-    font-size: 14px;
-    font-family: var(--subheading);
-    font-weight: lighter;
 }
