@@ -85,6 +85,16 @@ a {
     border: 1px solid black;
 }
 
+h6{
+    font-size: 0.5rem;
+    text-align:justify;
+}
+.edit{
+    width: 100px;
+    height: 50px;
+    font-size: 1.0rem;
+}
+
 .side-nav li {
     margin-bottom: 15px;
     color: #3d3b3b;
