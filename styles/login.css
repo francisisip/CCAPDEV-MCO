@@ -32,10 +32,9 @@ body {
 
 .flavor {
     width: 100%;
-    height: 969px;
+    height: 100%;
     opacity: 70%;
     filter: blur(2px);
-    overflow: hidden;
     object-fit: cover;
 }
 
