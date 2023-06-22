@@ -54,11 +54,12 @@ body {
 .title {
     display: flex;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .egg {
     position: absolute;
+    top: 5px;
     right: 100px;
     width: 200px;
     border-radius: 50%;
