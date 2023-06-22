@@ -26,12 +26,22 @@ body {
 
 #left-box {
     background-color: beige;
-    border-right: inset 5px black;
+    /* border-right: inset 5px black; */
     width: 35%;
+}
+
+.flavor {
+    width: 100%;
+    height: 969px;
+    opacity: 70%;
+    filter: blur(2px);
+    overflow: hidden;
+    object-fit: cover;
 }
 
 #right-box {
     background-color: white;
+    box-shadow: -15px 0px 50px #323333;
     display: flex;
     flex-direction: column;
     align-items: center;
