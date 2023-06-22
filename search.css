@@ -458,3 +458,11 @@ input[type="checkbox"]:checked +label {
     justify-content: center;
     align-items: center;
 }
+
+.username-container h5{
+    text-decoration: none;
+}
+
+.username-container h5:hover{
+    text-decoration: underline;
+}
