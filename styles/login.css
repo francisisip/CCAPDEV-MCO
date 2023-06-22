@@ -50,6 +50,14 @@ body {
 
 .image {
     position: relative;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.omsilog{
+    width: 45%;
 }
 
 .title {
@@ -68,13 +76,6 @@ body {
 
 .o {
     color: white;
-}
-
-.omsilog {
-    font-family: var(--heading);
-    font-size: 105px;
-    letter-spacing: 0.2ch;
-    margin-left: 110px;
 }
 
 .form {
