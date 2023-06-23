@@ -47,33 +47,14 @@ body {
     padding: 15px 15px 15px 15px;
 }
 
-.image {
-    position: relative;
+.page-logo {
+    display: inherit;
+    justify-content: center;
+    margin-top: 50px;
 }
 
-.title {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.egg {
-    position: absolute;
-    top: 5px;
-    right: 100px;
-    width: 200px;
-    border-radius: 50%;
-}
-
-.o {
-    color: white;
-}
-
-.omsilog {
-    font-family: var(--heading);
-    font-size: 105px;
-    letter-spacing: 0.2ch;
-    margin-left: 110px;
+.omsilog{
+    width: 50%;
 }
 
 .form {

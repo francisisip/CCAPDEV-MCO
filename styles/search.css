@@ -58,18 +58,10 @@ nav {
     position: absolute;
 }
 
-.egg {
-    position: absolute;
-    width: 80px;
-    top: 0.2px;
-    right: 110px;
-}
-
-.logo span {
-    font-family: var(--heading);
-    font-size: 26px;
-    font-weight: 100;
-    letter-spacing: 0.6ch;
+.omsilog {
+    position: relative;
+    width: 160px;
+    bottom: 8px;
 }
 
 .lp {
