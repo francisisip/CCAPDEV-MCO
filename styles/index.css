@@ -181,7 +181,8 @@ input[type="checkbox"]:checked +label {
 }
 
 .support-footer {
-    justify-content: center !important;
+    /*justify-content: center !important;*/
+    text-align: right;
 }
 
 #support-close {
@@ -353,8 +354,19 @@ input[type="checkbox"]:checked +label {
 
 .upvote {
     display: inline-block;
-    background-image: url(/images/upvote.png);
+    background-image: url(../images/upvote.png);
     background-position: 0px 0px;
+    width: 25px;
+    height: 30px;
+    background-size: 50px 25px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.upvote-2 {
+    display: inline-block;
+    background-image: url(../images/upvote.png);
+    background-position: -26px 0px;
     width: 25px;
     height: 30px;
     background-size: 50px 25px;
@@ -368,8 +380,19 @@ input[type="checkbox"]:checked +label {
 
 .downvote {
     display: inline-block;
-    background-image: url(/images/downvote.png);
+    background-image: url(../images/downvote.png);
     background-position: 0px 0px;
+    width: 25px;
+    height: 30px;
+    background-size: 50px 25px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.downvote-2 {
+    display: inline-block;
+    background-image: url(../images/downvote.png);
+    background-position: -24px 0px;
     width: 25px;
     height: 30px;
     background-size: 50px 25px;
@@ -401,9 +424,66 @@ input[type="checkbox"]:checked +label {
     margin-top: -1px;
 }
 
-/*
-styling for form groups
-*/
+/* Styling for CREATE POST MODAL */
+#publish-button {
+    background-color: black;
+    color: white;
+    width: 10rem;
+}
+
+#publish-button:hover {
+    background-color: white;
+    color: black;
+    outline: 1px solid black;
+}
+
+#close-button {
+    background-color: white;
+    color: black;
+    width: 7rem;
+}
+
+#close-button:hover {
+    outline: 2px solid black;
+}
+
+/*Title input*/
+.form-group .title-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+/*tag selector*/
+.form-group .select {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 200px;
+}
+
+.form-group .select select {
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  select:required:invalid {
+    color: #666;
+  }
+  option[value=""][disabled] {
+    display: none;
+  }
+  option {
+    color: #000;
+  }
+
+/*form groups*/
 .form-group {
     margin-bottom: 20px;
   }
@@ -420,9 +500,7 @@ styling for form groups
     border-radius: 4px;
   }
 
-/*
-styling for image upload
-*/
+/* image upload*/
 .image-upload {
     display: flex;
     flex-direction: column;
