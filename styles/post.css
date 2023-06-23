@@ -116,7 +116,7 @@ nav {
     font-family: var(--heading)
 }
 
-.title {
+#title {
     font-size: 42px;
 }
 
@@ -141,7 +141,7 @@ nav {
     font-weight: 700;
     margin-bottom: 10px;
     background-color: #ecebeb;
-    padding: 2.5px 20px 2.5px 20px;
+    padding: 2.5px 15px 2.5px 15px;
     border-radius: 20px;
 }
 
@@ -156,7 +156,7 @@ nav {
     height: 75px;
     padding: 5px;
 	border-radius: 50%;
-	background-color: #FAFAFA;
+	background-color: white;
 }
 
 .icon2 {
@@ -164,7 +164,7 @@ nav {
     height: 50px;
     padding: 5px;
 	border-radius: 50%;
-	background-color: #FAFAFA;
+	background-color: #2A2E34;
     margin-left: 20px;
 }
 
@@ -267,7 +267,7 @@ nav {
     font-weight: 700;
     cursor: pointer;
     background-color: #ecebeb;
-    padding: 2.5px 20px 2.5px 20px;
+    padding: 2.5px 15px 2.5px 15px;
     border-radius: 20px;
 }
 
@@ -395,4 +395,16 @@ display: block !important;
 .poption {
     font-size: 14px;
     font-weight: 600;
+}
+
+.modal-content {
+    font-family: var(--subheading);
+}
+
+.btn.btn-secondary {
+    background-color: #1E2328;
+}
+
+.btn.btn-secondary:hover {
+    background-color: rgba(30, 35, 40, 0.9);;
 }

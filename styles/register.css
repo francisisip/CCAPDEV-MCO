@@ -14,8 +14,6 @@ a, a:visited, a:hover, a:active {
 body {
     width: 100vw;
     height: 100vh;
-    margin: 0;
-    padding: 0;
 
 }
 
@@ -139,10 +137,10 @@ input[type=email] {
     color: rgba(0, 0, 0, 0.8);
 }
 
-.siw {
+.sign-in-with {
     font-family: var(--subheading);
     font-size: 12px;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 10px;
 }
 
@@ -188,14 +186,14 @@ input[type=email] {
     color: rgba(245, 179, 1, 0.8);
 }
 
+.modal-content {
+    font-family: var(--subheading);
+}
+
 .btn.btn-secondary {
     background-color: #1E2328;
 }
 
 .btn.btn-secondary:hover {
     background-color: rgba(30, 35, 40, 0.9);;
-}
-
-.form-check-input:checked {
-    background-color: red;  
 }
