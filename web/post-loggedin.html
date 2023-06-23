@@ -4,7 +4,12 @@
     <title></title>
     <link rel="stylesheet" href="../styles/post.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css%22%3E">
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="../js/post-loggedin.js"></script>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
   </head>
   <body>
     <header>
@@ -41,14 +46,14 @@
     <div class="box">
       
       <div class="up">
-        <div>
+        <div class="xyz">
           <a href="../web/user.html">
             <img src="../images/icon.jpg" class="icon">
           </a>
           <div class="buttons">
-            <span class="upvote"></span>
+            <span class="upvote" onclick="changeUpvote(this)"></span>
             <span class="num">11.1K</span>
-            <span class="downvote"></span>
+            <span class="downvote" onclick="changeDownvote(this)"></span>
           </div>
         </div>
         
@@ -64,7 +69,7 @@
               </div>
             </div>
           </div>
-          <span class="justify">
+          <span class="justify mpost">
             Filipinos love to eat. Consider that a fact! When the pandemic happened and everyone was forced to stay at home, suddenly everyone became a food blogger.
             From traditional adobo and sinigang to mouthwatering lechon and halo-halo, our cuisine is a treasure trove of flavors and culinary delights. Being confined to our homes gave us the perfect opportunity to explore our passion for cooking and share it with the world.
             In the virtual realm, social media platforms became flooded with beautifully plated dishes, step-by-step recipe tutorials, and heartfelt stories behind each creation. It was inspiring to witness the creativity and resourcefulness of our fellow Filipinos in the kitchen. People started sharing family recipes, secret ingredients, and even their own twists on classic dishes.
@@ -74,7 +79,7 @@
           </span>
           <div class="down">
             <div>
-              <a href="#comment" data-bs-toggle="modal" class="reply">Reply</a>
+              <a href="#createPostModal" data-bs-toggle="modal" class="reply">Reply</a>
             </div>
           </div>
         </div>
@@ -93,19 +98,11 @@
           
         </div>
         <div class="ucomment">
-          <div class="abc">
-            <a href="../web/user.html" class="cusername"><span >user1</span></a>
-            <div class="dropdown">
-              <button class="three-dots dropbtn"><i class="bi bi-three-dots psh"></i></button>
-              <div class="dropdown-content">
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-              </div>
-            </div>
-          </div>
+          <a href="../web/user.html" class="cusername"><span >user1</span></a>
           <span class="date">6/12/2023</span>
           <span class="truncate-text justify">
-            Hey there! I wanted to share my personal opinion on this matter, but please keep in mind that it's just my perspective. Of course, everyone is entitled to their own viewpoint, so I'm eager to hear your thoughts as well. Let's aim for a friendly and respectful discussion, so please comment kindly. Thank you in advance for your understanding and considerate engagement!</span>
+            Hey there! I wanted to share my personal opinion on this matter, but please keep in mind that it's just my perspective. Of course, everyone is entitled to their own viewpoint, so I'm eager to hear your thoughts as well. Let's aim for a friendly and respectful discussion, so please comment kindly. Thank you in advance for your understanding and considerate engagement!
+          </span>
         </div>
       </div>
       <div class="down2">
@@ -243,7 +240,7 @@
       </div>
     </div>
 
-    <!-- Modal -->
+    <!-- Unavailable Modal -->
     <div class="modal fade" id="soon" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -260,6 +257,7 @@
         </div>
       </div>
     </div>
+</div>
 
 
   </body>
