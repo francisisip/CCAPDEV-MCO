@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
 
 :root{
-    --primary: beige;
-    --secondary: black;
+    --primary: #F5B301;
+    --secondary: #1e2328;
     --heading: 'Inter', sans-serif;
     --subheading: 'Poppins', sans-serif;
 }
@@ -23,8 +23,6 @@ body {
 }
 
 #left-box {
-    background-color: beige;
-    /* border-right: inset 5px black; */
     width: 35%;
 }
 
@@ -78,7 +76,6 @@ body {
     font-family: var(--subheading);
     font-size: 14px;
     border-style: solid;
-    border-color: rgb(100, 100, 100);
     border-width: 2px;
     border-radius: 20px;
     padding-top: 9px;
@@ -113,7 +110,6 @@ input[type=email] {
     color: white;
     height: 40px;
     width: 300px;
-    font-weight: bold;
     font-size: 16px;
     border: none;
     border-radius: 20px;
@@ -122,25 +118,14 @@ input[type=email] {
 }
 
 .register:hover {
-    font-weight: 700;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
     background-color: rgba(30, 35, 40, 0.9);
-}
-
-.forgot {
-    font-size: 14px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-.forgot:hover {
-    color: rgba(0, 0, 0, 0.8);
 }
 
 .sign-in-with {
     font-family: var(--subheading);
     font-size: 12px;
-    margin-top: 50px;
+    margin-top: 48px;
     margin-bottom: 10px;
 }
 
@@ -167,18 +152,17 @@ input[type=email] {
 }
 
 .logo:hover {
-    background-color: rgba(30, 35, 40, 0.3);
+    background-color: rgba(30, 35, 40, 0.2);
 }
 
 .login {
-    display: flex;
     font-size: 14px;
     margin-top: 25px;
 }
 
 .login a {
-    margin-left: 5px;
-    color: #F5B301;
+    margin-left: 2px;
+    color: var(--primary);
     cursor: pointer;
 }
 
@@ -191,9 +175,15 @@ input[type=email] {
 }
 
 .btn.btn-secondary {
-    background-color: #1E2328;
+    background-color: var(--primary);
+    border: none;
 }
 
 .btn.btn-secondary:hover {
-    background-color: rgba(30, 35, 40, 0.9);;
+    background-color: rgba(245, 179, 1, 0.8);
+}
+
+.modal-header {
+    background-color: #1e2328;
+    color: white;
 }

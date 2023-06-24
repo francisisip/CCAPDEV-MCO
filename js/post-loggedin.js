@@ -1,3 +1,14 @@
+function changeUpvote(x) {
+x.classList.toggle("upvote");
+x.classList.toggle("upvote-2");
+}
+
+function changeDownvote(x) {
+x.classList.toggle("downvote");
+x.classList.toggle("downvote-2");
+}
+  
+
 //quill library for rich text-editor
 var quill = new Quill('#content', {
   theme: 'snow'

@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
 
 :root{
-    --primary: beige;
-    --secondary: black;
+    --primary: #F5B301;
+    --secondary: #1e2328;
     --heading: 'Inter', sans-serif;
     --subheading: 'Poppins', sans-serif;
 }
@@ -79,7 +79,6 @@ body {
     width: 300px;
     font-size: 14px;
     border-style: solid;
-    border-color: rgb(100, 100, 100);
     border-width: 2px;
     border-radius: 20px;
     padding-top: 9px;
@@ -101,16 +100,16 @@ input[type=password] {
     flex-direction: column;
     align-items: center;
     font-family: var(--subheading);
-    margin-top: 10px;
+    margin-top: 9px;
 }
 
 .login {
-    background-color: #1E2328;
+    background-color: var(--secondary);
     color: white;
     height: 40px;
     width: 300px;
-    font-weight: bold;
     font-size: 16px;
+    font-weight: 400;
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -118,7 +117,7 @@ input[type=password] {
 }
 
 .login:hover {
-    font-weight: 700;
+    font-weight: 500;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
     background-color: rgba(30, 35, 40, 0.9);
 }
@@ -127,12 +126,12 @@ input[type=password] {
     font-size: 12px;
     font-weight: lighter;
     margin-top: 10px;
-    color: black;
+    color: var(--secondary);
     cursor: pointer;
 }
 
 .forgot:hover {
-    color: rgba(0,0,0,0.85)
+    color: rgba(30, 35, 40, 0.9);
 }
 
 .sign-in-with {
@@ -165,7 +164,7 @@ input[type=password] {
 }
 
 .logo:hover {
-    background-color: rgba(30, 35, 40, 0.3);
+    background-color: rgba(30, 35, 40, 0.2);
 }
 
 .register {
@@ -175,7 +174,7 @@ input[type=password] {
 
 .register a {
     margin-left: 2px;
-    color: #F5B301;
+    color: var(--primary);
     cursor: pointer;
 }
 
@@ -188,17 +187,17 @@ input[type=password] {
 }
 
 .btn.btn-secondary {
-    background-color: #1E2328;
+    background-color: var(--primary);
+    border: none;
 }
 
 .btn.btn-secondary:hover {
-    background-color: rgba(30, 35, 40, 0.9);;
+    background-color: rgba(245, 179, 1, 0.8);
 }
 
 .form-group.form-check {
     display: flex;
     align-items: center;
-
 }
 
 .remember-me {
@@ -208,4 +207,9 @@ input[type=password] {
 
 #rMe:checked {
     background-color: #F5B301;  
+}
+
+.modal-header {
+    background-color: #1e2328;
+    color: white;
 }
