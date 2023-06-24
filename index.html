@@ -186,7 +186,7 @@
                         <div class="modal-content">
                             <div class="modal-header">
                             <h1 class="modal-title fs-5" id="staticBackdropLabel">Create Post</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
 
                             <div class="modal-body">
@@ -199,7 +199,7 @@
                                         <div class="form-group">
                                             <label for="tag">Post-Tag:</label>
                                             <div class="select">
-                                              <select id="tag" name="tag" required>
+                                              <select id="tag" name="tag" onfocus='this.size=4;' onblur='this.size=0;' onchange='this.size=1; this.blur();' required>
                                                 <option value="" disabled selected>Select Tag</option>
                                                 <option value="news">Review</option>
                                                 <option value="tutorial">Query</option>
@@ -224,7 +224,7 @@
                                                 <div class="image-preview"></div>
                                             </div>
                                         </div>
-                                        <div class="form-group support-footer">
+                                        <div class="create-post-footer">
                                             <button type="button" class="btn btn-secondary" id="close-button" data-bs-dismiss="modal">Close</button>
                                             <button type="button" class="btn btn-secondary" id="publish-button">Publish</button>
                                         </div>
