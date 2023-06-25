@@ -414,3 +414,95 @@ display: block !important;
 .btn.btn-secondary:hover {
     background-color: rgba(30, 35, 40, 0.9);;
 }
+
+/* Styling for CREATE POST MODAL */
+#publish-button {
+    background-color: #f5b301;
+    color: white;
+    width: 10rem;
+    border-color: #f5b301;
+}
+
+#publish-button:hover {
+    background-color: #fed053;
+    color: white;
+    border-color: #fed053;
+}
+
+#close-button {
+    background-color: #1e2328;
+    color: white;
+    width: 7rem;
+}
+
+#close-button:hover {
+    color: #1e2328;
+    background-color: white;
+    border-color: #1e2328;;
+}
+
+/*Title input*/
+.form-group .title-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+/*tag selector*/
+.form-group .select {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 200px;
+}
+
+.form-group .select select {
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  select:required:invalid {
+    color: #666;
+  }
+  option[value=""][disabled] {
+    display: none;
+  }
+  option {
+    color: #000;
+  }
+
+/*form groups*/
+.form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group .editor {
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+.create-post-footer {
+    text-align: right;
+}
+
+.modal-header {
+    background-color: #1e2328;
+    color: white;
+}
+
+option:hover {
+    background-color: #f5b301;
+}
