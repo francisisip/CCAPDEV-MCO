@@ -106,7 +106,6 @@ nav {
 
 .welcome-container {
     width: 100vw;
-    max-width: 1519.2px;
     height: 150px;
     display: flex;
     align-items: center;
@@ -115,6 +114,7 @@ nav {
 
 .welcome-background {
     position: absolute;
+    background-color: white;
     top: 0;
     left: 0;
     width: 100%;
@@ -123,20 +123,20 @@ nav {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 0% 15%;
-    filter: blur(3px);
+    opacity: 0.5;
+    filter: blur(1px);
     z-index: -1;
   }
 
 .welcome-text {
     text-align: left;
-    color: white;
+    color: #1e2328;
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 3rem;
+    font-family: var(--heading);
+    font-size: 50px;
     font-weight: 700;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #1e2328;
 }
 
 .search-container{
@@ -331,7 +331,7 @@ input[type="checkbox"]:checked +label {
 }
 
 .support-name {
-    font-size: 1.15rem;
+    font-size: 1.10rem;
     margin-bottom: 3px;
 }
 
