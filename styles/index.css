@@ -606,42 +606,6 @@ input[type="checkbox"]:checked +label {
     border-radius: 4px;
   }
 
-/* image upload*/
-.image-upload {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    border: 2px dashed #ccc;
-    border-radius: 5px;
-    cursor: pointer;
-}
-  
-.image-upload input[type="file"] {
-    display: none;
-}
-  
-.image-preview {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-}
-  
-.image-preview-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 150px;
-    height: 150px;
-    margin: 10px;
-    background-color: #f9f9f9;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 .create-post-footer {
     text-align: right;
 }
