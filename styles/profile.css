@@ -1,5 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&family=Cherry+Bomb+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+:root {
+    --black: #1e2328;
+    --heading: 'Inter', sans-serif;
+    --subheading: 'Poppins', sans-serif;
+}
+
+body {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    color: #1e2328;
+    font-family: var(--heading) !important;
+}
+
+header {
+    background-color: var(--black);
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+    position: sticky;
+    max-height: 100;
+    max-width: 100 !important;
+    top: 0;
+    padding-right: 200px;
+    padding-left: 200px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+a {
+    text-decoration: none !important; 
+    color: inherit !important; 
+}
+
+input[type=text] {
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 150px !important;
+    resize: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+option:hover {
+    background-color: #f5b301;
+}
+
+.modal-header {
+    background-color: #1e2328;
+    color: white;
+}
+
+.logo {
+    position: absolute;
+}
+
+.omsilog {
+    position: relative;
+    width: 220px;
+    bottom: 37px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.logo span {
+    font-size: 26px;
+    font-weight: 100;
+    letter-spacing: 0.6ch;
+}
+
+.lp {
+    padding: 12px;
+    text-decoration: none;
+}
+
+
+.nav-right > a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.search {
+    font-size: 14px;
+    margin-right: 10px;
+    width: 250px;
+    border-style: solid;
+    border-color: rgb(100, 100, 100);
+    border-width: 2px;
+    border-radius: 25px;
+    padding: 8px 5px 8px;
+}
 
 .main-container {
     width: 2500px;
@@ -11,9 +117,7 @@
     border-radius: 5px;
     margin-bottom: 50px;
 }
-.spacer{
-  height: 50px;
-}
+
 .profile-container {
   background-color: #f2f2f2;
   width: 500px;

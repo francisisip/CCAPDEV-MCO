@@ -24,6 +24,7 @@ textarea {
 }
 
 body {
+    font-family: var(--heading) !important;
     margin: 0;
     padding: 0;
     display: flex;
