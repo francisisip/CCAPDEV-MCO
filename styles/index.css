@@ -11,6 +11,7 @@ body {
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
+    min-width: 500px;
     color: #1e2328;
     font-family: var(--heading) !important;
 }
@@ -21,8 +22,10 @@ header {
     font-weight: 700;
     color: white;
     position: sticky;
+    width: 100vw;
     max-height: 100;
     max-width: 100 !important;
+    min-width: 1000px !important;
     top: 0;
     padding-right: 200px;
     padding-left: 200px;
