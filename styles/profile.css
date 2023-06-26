@@ -335,3 +335,11 @@ p{
 .btn.btn-secondary:hover {
   background-color: rgba(245, 179, 1, 0.8);
 }
+
+.formargin{
+  margin-left: 20px;
+}
+
+.formargin1{
+  margin-left: 30px;
+}

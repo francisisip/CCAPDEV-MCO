@@ -517,6 +517,10 @@ option:hover {
     background-color: #f5b301;
 }
 
-.tag {
-    margin-left: 5px;
+.formargin{
+    margin-left: 20px;
+}
+
+.formargin1{
+    margin-left: 30px;
 }

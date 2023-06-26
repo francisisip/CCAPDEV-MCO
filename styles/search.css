@@ -692,3 +692,7 @@ input[type="checkbox"]:checked +label {
 .formargin{
     margin-left: 20px;
 }
+
+.formargin1{
+    margin-left: 30px;
+}
