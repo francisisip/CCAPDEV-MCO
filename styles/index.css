@@ -69,12 +69,12 @@ option:hover {
 
 .logo {
     position: absolute;
+    bottom: 12px;
 }
 
 .omsilog {
     position: relative;
     width: 220px;
-    bottom: 37px;
 }
 
 .nav-right {

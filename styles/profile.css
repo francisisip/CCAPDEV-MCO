@@ -66,13 +66,13 @@ option:hover {
 }
 
 .logo {
-    position: absolute;
+  position: absolute;
+  bottom: 12px;
 }
 
 .omsilog {
-    position: relative;
-    width: 220px;
-    bottom: 37px;
+  position: relative;
+  width: 220px;
 }
 
 .nav-right {
