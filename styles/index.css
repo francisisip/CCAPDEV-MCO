@@ -113,7 +113,7 @@ option:hover {
 
 #search-icon-nav{
     width: 30px;
-    padding-right: 10px;
+    margin: 5px;
 }
 
 .welcome-container {
@@ -655,7 +655,7 @@ input[type="checkbox"]:checked +label {
 .picon {
     border-radius: 50%;
     background-color: #FAFAFA;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .poption {
@@ -674,4 +674,8 @@ input[type="checkbox"]:checked +label {
 
 .btn.btn-secondary:hover {
     background-color: rgba(245, 179, 1, 0.8);
+}
+
+.formargin{
+    margin-left: 20px;
 }

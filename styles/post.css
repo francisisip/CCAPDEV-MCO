@@ -106,7 +106,7 @@ nav {
 
 #search-icon-nav{
     width: 30px;
-    padding-right: 10px;
+    margin: 5px;
 }
 
 #post-title {
@@ -400,7 +400,7 @@ display: block !important;
 .picon {
 	border-radius: 50%;
 	background-color: #FAFAFA;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .poption {
