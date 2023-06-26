@@ -2,8 +2,8 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
 :root {
-    --primary: rgb(119, 194, 33);
-    --secondary: white;
+    --primary: #F5B301;
+    --secondary: #1e2328;
     --heading: 'Inter', sans-serif;
     --subheading: 'Poppins', sans-serif;
 }
@@ -671,9 +671,10 @@ input[type="checkbox"]:checked +label {
     }
     
     .btn.btn-secondary {
-        background-color: #1E2328;
+        background-color: var(--primary);
+        border: none;
     }
     
     .btn.btn-secondary:hover {
-        background-color: rgba(30, 35, 40, 0.9);;
+        background-color: rgba(245, 179, 1, 0.8);
     }

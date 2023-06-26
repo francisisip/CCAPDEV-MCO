@@ -2,8 +2,8 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
 :root {
-    --primary: rgb(119, 194, 33);
-    --secondary: white;
+    --primary: #F5B301;
+    --secondary: #1e2328;
     --heading: 'Inter', sans-serif;
     --subheading: 'Poppins', sans-serif;
 }
@@ -407,14 +407,6 @@ display: block !important;
     font-family: var(--subheading);
 }
 
-.btn.btn-secondary {
-    background-color: #1E2328;
-}
-
-.btn.btn-secondary:hover {
-    background-color: rgba(30, 35, 40, 0.9);;
-}
-
 /* Styling for CREATE POST MODAL */
 #publish-button {
     background-color: #f5b301;
@@ -482,17 +474,17 @@ display: block !important;
     margin-bottom: 20px;
   }
   
-  .form-group label {
+.form-group label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-  }
-  
-  .form-group .editor {
+}
+
+.form-group .editor {
     height: 200px;
     border: 1px solid #ccc;
     border-radius: 4px;
-  }
+}
 
 .create-post-footer {
     text-align: right;
@@ -503,6 +495,23 @@ display: block !important;
     color: white;
 }
 
+.modal-content {
+    font-family: var(--subheading);
+}
+
+.btn.btn-secondary {
+    background-color: var(--primary);
+    border: none;
+}
+
+.btn.btn-secondary:hover {
+    background-color: rgba(245, 179, 1, 0.8);
+}
+
 option:hover {
     background-color: #f5b301;
+}
+
+.tag {
+    margin-left: 5px;
 }
