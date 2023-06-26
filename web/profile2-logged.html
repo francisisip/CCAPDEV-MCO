@@ -39,11 +39,11 @@
         <div class="main-container">
            <div class = "profile-container">
                 <div class = "profile">
-                    <a class = "profile-photo-container" href ="profile2-logged.html">
+                    <a class = "profile-photo-container">
                         <img class="profile-icon" src="../images/icon2.jpg" alt="">
                     </a>
                     <br>
-                    <a href ="profile2-logged.html" >
+                    <a>
                         <p class = "profile-name">NeonBalls.6</p>
                     </a>
                     <p>-------------------------------------</p>
@@ -152,13 +152,9 @@
                                 </div>
                             </div>
                             <div class="interactions">
-                                <div class="upvote">
-                                    <a href="#cantvote" data-bs-toggle="modal" class="upvote"></a>
-                                </div>
-                                <div class="vote-count">3.4k</div>
-                                <div class="downvote">
-                                    <a href="#cantvote" data-bs-toggle="modal" class="downvote"></a>
-                                </div>
+                                <div class="upvote" onclick="changeUpvote(this)"></div>
+                                <div class="vote-count">623</div>
+                                <div class="downvote" onclick="changeDownvote(this)"></div>
                                 <div class="spacer"></div>
                                 <a href="" style="text-align: center;">
                                     <i onmouseenter="changeComment(this)" onmouseleave="changeComment(this)" class="bi bi-chat-left comment-icon"></i>

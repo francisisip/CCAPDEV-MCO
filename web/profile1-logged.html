@@ -43,7 +43,7 @@
                         <img class="profile-icon" src="../images/icon.jpg" alt="">
                     </a>
                     <br>
-                    <a href ="profile1-logged.html" >
+                    <a>
                         <p class = "profile-name">Fishball_Lover39</p>
                     </a>
                     <p>-------------------------------------</p>
@@ -155,13 +155,9 @@
                                 </div>
                             </div>
                             <div class="interactions">
-                                <div class="upvote">
-                                    <a href="#cantvote" data-bs-toggle="modal" class="upvote"></a>
-                                </div>
+                                <div class="upvote" onclick="changeUpvote(this)"></div>
                                 <div class="vote-count">623</div>
-                                <div class="downvote">
-                                    <a href="#cantvote" data-bs-toggle="modal" class="downvote"></a>
-                                </div>
+                                <div class="downvote" onclick="changeDownvote(this)"></div>
                                 <div class="spacer"></div>
                                 <a href="" style="text-align: center;">
                                     <i onmouseenter="changeComment(this)" onmouseleave="changeComment(this)" class="bi bi-chat-left comment-icon"></i>
