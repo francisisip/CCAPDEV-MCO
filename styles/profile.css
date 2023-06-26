@@ -109,6 +109,11 @@ option:hover {
     padding: 8px 5px 8px;
 }
 
+#search-icon-nav{
+  width: 30px;
+  padding-right: 10px;
+}
+
 .dropdown {
   position: relative !important;
   display: inline-block !important;
