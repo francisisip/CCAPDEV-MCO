@@ -663,7 +663,7 @@ input[type="checkbox"]:checked +label {
 }
 
 .btn.btn-secondary {
-    background-color: var(--primary);
+    background-color: var(--yellow);
     border: none;
 }
 
