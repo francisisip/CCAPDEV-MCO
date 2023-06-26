@@ -369,6 +369,7 @@ input[type="checkbox"]:checked +label {
     display: flex;
     padding: 12px;
     gap: 8px;
+    max-height: 201.22px;
 }
 
 .post-info {
@@ -434,17 +435,21 @@ input[type="checkbox"]:checked +label {
 }
 
 .post-description {
+    display: -webkit-box;
     background-color: whitesmoke;
-    padding: 4px;
+    padding: 5px;
     border: solid #1e2328;
     border-width: 0px 0px 0px 2px;
     line-height: 1.3rem;
     width: 585px;
     min-height: 50px;
     height: auto;
+    max-height: 70px;
     overflow: hidden;
-    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
     font-family: var(--subheading) !important;
+    text-align: justify;
 }
 
 .interactions {
