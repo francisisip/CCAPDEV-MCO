@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Omsilog &#8226; Search</title>
+        <title>Omsilog &#8226; Home</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../styles/search.css">
-        <link rel="icon" type="image/x-icon" href="../images/egg.png">
+        <link rel="stylesheet" href="styles/index.css">
+        <link rel="icon" type="image/x-icon" href="images/egg.png">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
         
         <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
         <script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
-        <script src="../js/index.js" defer></script>
+        <script src="js/index.js" defer></script>
 
         <style>
             @media screen {
@@ -27,72 +27,25 @@
         }
         </style>
     <body>
-        <!--navbar-->
         <header>
             <nav>
               <div>
                 <div class="home">
-                  <a href="../index.html" class="logo">
-                    <img src="../images/omsilog-white.png" class="omsilog">
+                  <a href="index.html" class="logo">
+                    <img src="images/omsilog-white.png" class="omsilog">
                   </a>
                 </div>
               </div>
               <div class="nav-right">
                 <input type="text" class="search" placeholder="Search" />
-                <a href="../web/login.html" class="lp"><span>Log In</span></a>
-                <a href="../web/register.html" class="lp"><span>Register</span></a>
+                <a href="web/login.html" class="lp"><span >Log In</span></a>
+                <a href="web/register.html" class="lp"><span >Register</span></a>
               </div>
             </nav>
           </header>
         <div class="welcome-container">
-            <div class="welcome-text">Looking for Something?</div>
+            <div class="welcome-text">Welcome to the Omsilog Community!</div>
             <div class="welcome-background"></div>
-        </div>
-        <div class="search-container">
-            <div class="search-bar">
-                <form>
-                    <input type="text" class="search-box" placeholder="Search anything!">
-                </form>
-                <a class="search-icon-container" href="">
-                    <img id="search-icon" src="../images/search-icon.png">
-                </a>
-            </div>
-            <div class="filter-container">
-                <div class="filter-btn-container">
-                    <button class="filter-btn" id="type-btn">
-                        Type
-                    </button>
-                    <div class="filter-dropdown" id="type">
-                        <a href="">Posts</a>
-                        <a href="">Users</a>
-                    </div>
-                </div>
-
-                <div class="filter-btn-container">
-                    <button class="filter-btn" id="sort-btn">
-                        Sort By
-                    </button>
-                    <div class="filter-dropdown" id="sort">
-                        <a href="">Most Upvoted</a>
-                        <a href="">Least Upvoted</a>
-                        <a href="">Recent</a>
-                        <a href="">Oldest</a>
-                    </div>
-                </div>
-
-                <div class="filter-btn-container">
-                    <button class="filter-btn" id="tags-btn">
-                        Tags
-                    </button>
-                    <div class="filter-dropdown" id="tagsf">
-                        <a href="">Announcements</a>
-                        <a href="">Meme</a>
-                        <a href="">Review</a>
-                        <a href="">Query</a>
-                        <a href="">Meta</a>
-                    </div>
-                </div>
-            </div>
         </div>
         <div class="main-container">
             <!--short links on left side-->
@@ -166,7 +119,7 @@
                                     <div class="modal-body support-body-container">
                                         <div class="contact-container">
                                             <a href="" class="support-icon-container">
-                                                <img src="../images/user1.jpg" alt="" class="support-icon">
+                                                <img src="images/user1.jpg" alt="" class="support-icon">
                                             </a>
                                             <div class="support-name">Francis Bawa</div>
                                             <div class="contact-container-sub">
@@ -180,7 +133,7 @@
                                         </div>
                                         <div class="contact-container">
                                             <a href="" class="support-icon-container">
-                                                <img src="../images/user2.jpg" alt="" class="support-icon">
+                                                <img src="images/user2.jpg" alt="" class="support-icon">
                                             </a>
                                             <div class="support-name">Max Burce</div>
                                             <div class="contact-container-sub">
@@ -194,7 +147,7 @@
                                         </div>
                                         <div class="contact-container">
                                             <a href="" class="support-icon-container">
-                                                <img src="../images/user3.png" alt="" class="support-icon">
+                                                <img src="images/user3.png" alt="" class="support-icon">
                                             </a>
                                             <div class="support-name">Zach Gomez</div>
                                             <div class="contact-container-sub">
@@ -208,7 +161,7 @@
                                         </div>
                                         <div class="contact-container">
                                             <a href="" class="support-icon-container">
-                                                <img src="../images/user4.png" alt="" class="support-icon">
+                                                <img src="images/user4.png" alt="" class="support-icon">
                                             </a>
                                             <div class="support-name">Ricardo Vicerra</div>
                                             <div class="contact-container-sub">
@@ -230,15 +183,69 @@
                     </li>
                 </ul>
             </aside>
-
             <!--main forum content-->
             <div class="thread-container">
+                <!--create post-->
+                <div class="create-post-container">
+                    <a class="icon-container" href="">
+                        <img class="user-icon" src="images/user2.jpg" alt="">
+                    </a>
+                    <a href="#createPostModal" class="create-post" data-bs-toggle="modal">
+                        <div class="create-post-text">Create Post</div>
+                    </a>
+
+                    <!--create post modal-->
+                    <div class="modal fade" id="createPostModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Create Post</h1>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+
+                            <div class="modal-body">
+                                <form action="">
+                                    <div>
+                                        <div class="form-group">
+                                            <label for="create-post-title">Title:</label>
+                                            <input type="text" class="title-input" id="create-post-title" name="create-post-title" placeholder="Enter post title" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="tag">Post-Tag:</label>
+                                            <div class="select">
+                                              <select id="tag" name="tag" onfocus='this.size=4;' onblur='this.size=0;' onchange='this.size=1; this.blur();' required>
+                                                <option value="" disabled selected>Select Tag</option>
+                                                <option value="review">Review</option>
+                                                <option value="query">Query</option>
+                                                <option value="meme">Meme</option>
+                                                <option value="meta">Meta</option>
+                                              </select>
+                                            </div>
+                                          </div>
+                                        <div class="form-group">
+                                            <label for="content">Content:</label>
+                                            <div id="content" class="editor"></div>
+                                            <textarea id="content-input" name="content" style="display: none;"></textarea>
+                                        </div>
+                                        <div class="create-post-footer">
+                                            <button type="button" class="btn btn-secondary" id="close-button" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-secondary" id="publish-button">Publish</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
 
                 <!--start of forum posts/threads-->
                 <div class="post">
                     <div class="post-info-container">
                         <a class="icon-container" href="">
-                            <img class="user-icon" src="../images/icon.jpg" alt="">
+                            <img class="user-icon" src="images/icon.jpg" alt="">
                         </a>
                         <div class="post-info">
                             <a href="">
@@ -265,13 +272,9 @@
                             </div>
                         </div>
                         <div class="interactions">
-                            <div class="upvote">
-                                <a href="#cantvote" data-bs-toggle="modal" class="upvote"></a>
-                            </div>
+                            <div class="upvote" onclick="changeUpvote(this)"></div>
                             <div class="vote-count">623</div>
-                            <div class="downvote">
-                                <a href="#cantvote" data-bs-toggle="modal" class="downvote"></a>
-                            </div>
+                            <div class="downvote" onclick="changeDownvote(this)"></div>
                             <div class="spacer"></div>
                             <a href="" style="text-align: center;">
                                 <i onmouseenter="changeComment(this)" onmouseleave="changeComment(this)" class="bi bi-chat-left comment-icon"></i>
@@ -284,7 +287,7 @@
                 <div class="post">
                     <div class="post-info-container">
                         <a class="icon-container" href="">
-                            <img class="user-icon" src="../images/icon2.jpg" alt="">
+                            <img class="user-icon" src="images/icon2.jpg" alt="">
                         </a>
                         <div class="post-info">
                             <a href="">
@@ -311,13 +314,9 @@
                             </div>
                         </div>
                         <div class="interactions">
-                            <div class="upvote">
-                                <a href="#cantvote" data-bs-toggle="modal" class="upvote"></a>
-                            </div>
+                            <div class="upvote" onclick="changeUpvote(this)"></div>
                             <div class="vote-count">3.4k</div>
-                            <div class="downvote">
-                                <a href="#cantvote" data-bs-toggle="modal" class="downvote"></a>
-                            </div>
+                            <div class="downvote" onclick="changeDownvote(this)"></div>
                             <div class="spacer"></div>
                             <a href="" style="text-align: center;">
                                 <i onmouseenter="changeComment(this)" onmouseleave="changeComment(this)" class="bi bi-chat-left comment-icon"></i>
@@ -330,7 +329,7 @@
                 <div class="post">
                     <div class="post-info-container">
                         <a class="icon-container" href="">
-                            <img class="user-icon" src="../images/icon3.jpg" alt="">
+                            <img class="user-icon" src="images/icon3.jpg" alt="">
                         </a>
                         <div class="post-info">
                             <a href="">
@@ -357,13 +356,9 @@
                             </div>
                         </div>
                         <div class="interactions">
-                            <div class="upvote">
-                                <a href="#cantvote" data-bs-toggle="modal" class="upvote"></a>
-                            </div>
+                            <div class="upvote" onclick="changeUpvote(this)"></div>
                             <div class="vote-count">894</div>
-                            <div class="downvote">
-                                <a href="#cantvote" data-bs-toggle="modal" class="downvote"></a>
-                            </div>
+                            <div class="downvote" onclick="changeDownvote(this)"></div>
                             <div class="spacer"></div>
                             <a href="" style="text-align: center;">
                                 <i onmouseenter="changeComment(this)" onmouseleave="changeComment(this)" class="bi bi-chat-left comment-icon"></i>
@@ -376,7 +371,7 @@
                 <div class="post">
                     <div class="post-info-container">
                         <a class="icon-container" href="">
-                            <img class="user-icon" src="../images/icon4.jpg" alt="">
+                            <img class="user-icon" src="images/icon4.jpg" alt="">
                         </a>
                         <div class="post-info">
                             <a href="">
@@ -403,13 +398,9 @@
                             </div>
                         </div>
                         <div class="interactions">
-                            <div class="upvote">
-                                <a href="#cantvote" data-bs-toggle="modal" class="upvote"></a>
-                            </div>
-                            <div class="vote-count">894</div>
-                            <div class="downvote">
-                                <a href="#cantvote" data-bs-toggle="modal" class="downvote"></a>
-                            </div>
+                            <div class="upvote" onclick="changeUpvote(this)"></div>
+                            <div class="vote-count">105</div>
+                            <div class="downvote" onclick="changeDownvote(this)"></div>
                             <div class="spacer"></div>
                             <a href="" style="text-align: center;">
                                 <i onmouseenter="changeComment(this)" onmouseleave="changeComment(this)" class="bi bi-chat-left comment-icon"></i>
@@ -422,7 +413,7 @@
                 <div class="post">
                     <div class="post-info-container">
                         <a class="icon-container" href="">
-                            <img class="user-icon" src="../images/icon5.jpg" alt="">
+                            <img class="user-icon" src="images/icon5.jpg" alt="">
                         </a>
                         <div class="post-info">
                             <a href="">
@@ -449,13 +440,9 @@
                             </div>
                         </div>
                         <div class="interactions">
-                            <div class="upvote">
-                                <a href="#cantvote" data-bs-toggle="modal" class="upvote"></a>
-                            </div>
-                            <div class="vote-count">894</div>
-                            <div class="downvote">
-                                <a href="#cantvote" data-bs-toggle="modal" class="downvote"></a>
-                            </div>
+                            <div class="upvote" onclick="changeUpvote(this)"></div>
+                            <div class="vote-count">-4.8k</div>
+                            <div class="downvote" onclick="changeDownvote(this)"></div>
                             <div class="spacer"></div>
                             <a href="" style="text-align: center;">
                                 <i onmouseenter="changeComment(this)" onmouseleave="changeComment(this)" class="bi bi-chat-left comment-icon"></i>
@@ -464,83 +451,7 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="user">
-                    <div class="user-info-container">
-                        <a class="icon-container" href="">
-                            <img class="user-icon" src="../images/icon.jpg" alt="">
-                        </a>
-
-                        <a class="username-container" href="">
-                            <h5>u/Fishball_Lover39</h5>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="user">
-                    <div class="user-info-container">
-                        <a class="icon-container" href="">
-                            <img class="user-icon" src="../images/icon2.jpg" alt="">
-                        </a>
-
-                        <a class="username-container" href="">
-                            <h5>u/NeonBalls.6</h5>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="user">
-                    <div class="user-info-container">
-                        <a class="icon-container" href="">
-                            <img class="user-icon" src="../images/icon3.jpg" alt="">
-                        </a>
-
-                        <a class="username-container" href="">
-                            <h5>u/radioheadlover00</h5>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="user">
-                    <div class="user-info-container">
-                        <a class="icon-container" href="">
-                            <img class="user-icon" src="../images/icon4.jpg" alt="">
-                        </a>
-
-                        <a class="username-container" href="">
-                            <h5>u/annoying_complainer</h5>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="user">
-                    <div class="user-info-container">
-                        <a class="icon-container" href="">
-                            <img class="user-icon" src="../images/icon5.jpg" alt="">
-                        </a>
-
-                        <a class="username-container" href="">
-                            <h5>u/xXdestroyerOfWorldsXx</h5>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="cantvote" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Hey there!</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  You need to login or register to vote on this post!
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-              </div>
+        
             </div>
         </div>
     </body>
