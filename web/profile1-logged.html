@@ -59,7 +59,7 @@
                             <a class="nav-link active" data-bs-toggle="pill" href="#view-posts">View Posts </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="pill" href="#view-comments ">View Comments</a>
+                            <a class="nav-link" data-bs-toggle="pill" href="#view-comments">View Comments</a>
                         </li>
                     </ul>
                 </div>
@@ -131,12 +131,58 @@
                                 <img class="user-icon" src="../images/icon.jpg" alt="">
                             </a>
                             <div class="post-info">
-                                <a href="">
+                                <a href="post-loggedin.html">
+                                    <div class="post-title">Pandemic & Food</div>
+                                </a>
+                                <div class="post-tags-container">
+                                    <div class="post-tag meta-tag">
+                                        <a href="search-loggedin.html">
+                                            <i class="bi bi-lightbulb-fill"></i>
+                                            <span>Meta</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-details">
+                                    <div class="details-icon"></div>
+                                    <i class="bi bi-pen-fill"></i>
+                                    <a href="">
+                                        <div class="username">Fishball_Lover39</div>
+                                    </a>
+                                    <div class="post-date">&nbsp;created 6/11/2023</div>
+                                </div>
+                                <div class="post-description">
+                                    Filipinos love to eat. Consider that a fact! When the pandemic happened and everyone was forced to stay at home, suddenly everyone became a food blogger.
+            From traditional adobo and sinigang to mouthwatering lechon and halo-halo, our cuisine is a treasure trove of flavors and culinary delights. Being confined to our homes gave us the perfect opportunity to explore our passion for cooking and share it with the world.
+            In the virtual realm, social media platforms became flooded with beautifully plated dishes, step-by-step recipe tutorials, and heartfelt stories behind each creation. It was inspiring to witness the creativity and resourcefulness of our fellow Filipinos in the kitchen. People started sharing family recipes, secret ingredients, and even their own twists on classic dishes.
+            Food blogging during the pandemic became more than just a hobby; it became a way to connect and support one another. The online food community flourished with like-minded individuals who were eager to exchange ideas, offer cooking tips, and support local food businesses. It created a sense of unity and camaraderie, even when we were physically apart.
+            As we continue to navigate through these challenging times, let's not forget the joy that food brings us. Whether it's recreating nostalgic dishes from our childhood or discovering new flavors, let's celebrate the resilience of the Filipino spirit through our shared love for food. Together, we can turn our kitchens into creative sanctuaries and our food blogs into platforms of inspiration and connection.
+            So, grab your aprons, sharpen your knives, and let's embark on this culinary journey together. What's your favorite Filipino dish that you've shared on your food blog? Any tips for aspiring food bloggers looking to make their mark in the digital foodie world? Let's keep the foodie revolution alive!"
+                                </div>
+                            </div>
+                            <div class="interactions">
+                                <div class="upvote" onclick="changeUpvote(this)"></div>
+                                <div class="vote-count">11.1K</div>
+                                <div class="downvote" onclick="changeDownvote(this)"></div>
+                                <div class="spacer"></div>
+                                <a href="post-loggedin.html" style="text-align: center;">
+                                    <i onmouseenter="changeComment(this)" onmouseleave="changeComment(this)" class="bi bi-chat-left comment-icon"></i>
+                                </a>
+                                <div class="comment-count">3</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="post-info-container">
+                            <a class="icon-container" href="">
+                                <img class="user-icon" src="../images/icon.jpg" alt="">
+                            </a>
+                            <div class="post-info">
+                                <a href="post5-loggedin.html">
                                     <div class="post-title">Makati Pizza Places</div>
                                 </a>
                                 <div class="post-tags-container">
                                     <div class="post-tag query-tag">
-                                        <a href="">
+                                        <a href="search-loggedin.html">
                                             <i class="bi bi-question-circle-fill"></i>
                                             <span>Query</span>
                                         </a>
@@ -159,30 +205,33 @@
                                 <div class="vote-count">623</div>
                                 <div class="downvote" onclick="changeDownvote(this)"></div>
                                 <div class="spacer"></div>
-                                <a href="" style="text-align: center;">
+                                <a href="post5-loggedin.html" style="text-align: center;">
                                     <i onmouseenter="changeComment(this)" onmouseleave="changeComment(this)" class="bi bi-chat-left comment-icon"></i>
                                 </a>
-                                <div class="comment-count">4</div>
+                                <div class="comment-count">0</div>
                             </div>
                         </div>
                     </div>
+                </div>
                 <div id = "view-comments" class ="tab-pane fade">
                     <div class="post">
                         <div class="post-info-container">
                             <a class="icon-container" href="">
-                                <img class="user-icon" src="../images/user2.jpg" alt="">
+                                <img class="user-icon" src="../images/icon.jpg" alt="">
                             </a>
                             <div class="post-info">
-                                <div class="post-details">
-                                    <div class="details-icon"></div>
-                                    <i class="bi bi-pen-fill"></i>
-                                    <a href="">
-                                        <div class="username">user2</div>
-                                    </a>
-                                    <div class="post-date">&nbsp;commented 6/22/2023</div>
-                                </div>
-                                <div class="post-description">
-                                    🍩 Indulged in some heavenly pastries today! The pastel-colored macarons were light and delicate, while the flaky croissants melted in my mouth. A sweet tooth's paradise! #PastryLove #TreatYourself
+                                <div class = "clickable-div" onclick="location.href='comment.html'";>
+                                    <div class="post-details">
+                                        <div class="details-icon"></div>
+                                        <i class="bi bi-pen-fill"></i>
+                                        <a href="">
+                                            <div class="username">Fishball_Lover39</div>
+                                        </a>
+                                        <div class="post-date">&nbsp;commented 6/11/2023</div>
+                                    </div>
+                                    <div class="post-description">
+                                        Hey there! I wanted to share my personal opinion on this matter, but please keep in mind that it's just my perspective. Of course, everyone is entitled to their own viewpoint, so I'm eager to hear your thoughts as well. Let's aim for a friendly and respectful discussion, so please comment kindly. Thank you in advance for your understanding and considerate engagement!
+                                    </div>
                                 </div>
                             </div>
                         </div>

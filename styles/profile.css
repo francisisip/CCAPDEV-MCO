@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
-:root {
-    --black: #1e2328;
-    --heading: 'Inter', sans-serif;
-    --subheading: 'Poppins', sans-serif;
+:root{
+  --primary: #F5B301;
+  --secondary: #1e2328;
+  --heading: 'Inter', sans-serif;
+  --subheading: 'Poppins', sans-serif;
 }
 
 body {
@@ -313,3 +314,19 @@ p{
     display: table;
     clear: both;
   }
+  .clickable-div {
+    cursor: pointer;
+}
+
+.modal-content {
+  font-family: var(--subheading);
+}
+
+.btn.btn-secondary {
+  background-color: var(--primary);
+  border: none;
+}
+
+.btn.btn-secondary:hover {
+  background-color: rgba(245, 179, 1, 0.8);
+}
