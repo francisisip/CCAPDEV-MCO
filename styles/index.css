@@ -3,6 +3,7 @@
 
 :root {
     --black: #1e2328;
+    --yellow: #F5B301;
     --heading: 'Inter', sans-serif;
     --subheading: 'Poppins', sans-serif;
 }
@@ -613,4 +614,14 @@ input[type="checkbox"]:checked +label {
 
 .create-post-footer {
     text-align: right;
+}
+
+/*CANT MODAL BUTTON*/
+.btn.btn-secondary {
+    background-color: #f5b301;
+    border: none;
+}
+
+.btn.btn-secondary:hover {
+    background-color: rgba(245, 179, 1, 0.8);
 }
