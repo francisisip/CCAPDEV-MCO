@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>radioheadLover00</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/profile.css">
+        <link rel="stylesheet" href="../styles/index.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        
+        <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <script src="../js/index.js" defer></script>
+        <script src="../js/edit-profile.js"></script>
+    <body>
+        <!--navbar-->
+        <header>
+            <nav>
+              <div>
+                <div class="home">
+                  <a href="../index.html" class="logo">
+                    <img src="../images/omsilog-white.png" class="omsilog">
+                  </a>
+                </div>
+              </div>
+              <div class="nav-right">
+                <input type="text" class="search" placeholder="Search" />
+                <div class="dropdown">
+                  <img src="../images/icon.jpg" width="50" height="50" class="picon">
+                  <div class="dropdown-content">
+                    <a href="profile1-logged.html" class="poption">View Profile</a>
+                    <a href="login.html" class="poption">Logout</a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </header>
+       </div>
+        <div class="main-container">
+           <div class = "profile-container">
+                <div class = "profile">
+                    <a class = "profile-photo-container" href ="profile3-logged.html">
+                        <img class="profile-icon" src="../images/icon3.jpg" alt="">
+                    </a>
+                    <br>
+                    <a href ="profile3-logged.html" >
+                        <p class = "profile-name">radioheadLover00</p>
+                    </a>
+                    <p>-------------------------------------</p>
+                    <p>In the realm of musical landscapes, my soul finds solace in the haunting melodies of Radiohead. 
+                        Their ethereal soundscapes intertwine with my very essence, resonating deeply within my being.
+                        With every note and lyric, I am transported to a realm where emotions collide and introspection flourishes, forever bound to the spell of Radiohead's mesmerizing artistry.</p> 
+                    <p>-------------------------------------</p>
+                    <ul class="nav profile">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="pill" href="#view-posts">View Posts </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="pill" href="#view-comments ">View Comments</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--main forum content-->
+            <div class="content-container">
+                <div id = "edit-info" class ="tab-pane fade">
+                    <div class="form-section">
+                        <form method="post" enctype="multipart/form-data">
+                            <h1>Edit Profile</h1>
+                            <div class="form-group col">
+                                <label for="profilePicture">Upload Profile picture:</label>
+                                <input type="file" class="form-control" id="pfpupload" accept="image/*"> <br>
+                                <img id="profilePictureDisplay" class="profile-picture" src="../images/icon2.jpg" alt="Profile Picture">
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col">
+                                <label for="firstName">First Name:</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="Enter first name">
+                              </div>
+                          
+                              <div class="form-group col">
+                                <label for="lastName">Last Name:</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Enter last name">
+                              </div>
+                            </div>
+                          
+                            <div class="form-row">
+                              <div class="form-group col">
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="password" placeholder="Enter password">
+                              </div>
+                          
+                              <div class="form-group col">
+                                <label for="confirmPassword">Confirm Password:</label>
+                                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password">
+                              </div>
+                            </div>
+                          
+                            <div class="form-row">
+                              <div class="form-group col">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="Enter email">
+                              </div>
+                          
+                              <div class="form-group col">
+                                <label for="confirmEmail">Confirm Email:</label>
+                                <input type="email" id="confirmEmail" name="confirmEmail" placeholder="Confirm email">
+                              </div>
+                            </div>
+                          
+                            <div class="form-group">
+                              <label for="bio">Edit Bio:</label>
+                              <textarea id="bio" name="bio" rows="2" cols="50" placeholder="Enter bio"></textarea>
+                            </div>
+                          
+                            <input type="submit" value="Save Changes">
+                            <button type="button" class="cancel" onclick="cancelForm()">Cancel</button>
+                          </form>
+                    </div>
+                </div>
+
+                <div id = "view-posts" class = "tab-pane fade show active">
+                    <!--start of forum posts/threads-->
+                    <div class="post">
+                        <div class="post-info-container">
+                            <a class="icon-container" href="">
+                                <img class="user-icon" src="../images/icon3.jpg" alt="">
+                            </a>
+                            <div class="post-info">
+                                <a href="">
+                                    <div class="post-title">Ate Letty's Mango Blast Review</div>
+                                </a>
+                                <div class="post-tags-container">
+                                    <div class="post-tag review-tag">
+                                        <a href="">
+                                            <i class="bi bi-check-circle-fill"></i>
+                                            <span>Review</span>  
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-details">
+                                    <div class="details-icon"></div>
+                                    <i class="bi bi-pen-fill"></i>
+                                    <a href="">
+                                        <div class="username">radioheadLover00</div>
+                                    </a>
+                                    <div class="post-date">&nbsp;created 7/5/2023</div>
+                                </div>
+                                <div class="post-description">
+                                    If you're looking to beat the heat, Ate Letty's Mango Blast is the best!! It's right around BGC, and has the best Mango Graham Shakes topped with caramel sauce and whipped cream, and the best part: they're buy1take1 for 150 pesos! Solid!
+                                </div>
+                            </div>
+                            <div class="interactions">
+                                <div class="upvote">
+                                    <a href="#cantvote" data-bs-toggle="modal" class="upvote"></a>
+                                </div>
+                                <div class="vote-count">894</div>
+                                <div class="downvote">
+                                    <a href="#cantvote" data-bs-toggle="modal" class="downvote"></a>
+                                </div>
+                                <div class="spacer"></div>
+                                <a href="" style="text-align: center;">
+                                    <i onmouseenter="changeComment(this)" onmouseleave="changeComment(this)" class="bi bi-chat-left comment-icon"></i>
+                                </a>
+                                <div class="comment-count">3</div>
+                            </div>
+                        </div>
+                    </div>
+                <div id = "view-comments" class ="tab-pane fade">
+                    <div class="post">
+                        <div class="post-info-container">
+                            <a class="icon-container" href="">
+                                <img class="user-icon" src="../images/user2.jpg" alt="">
+                            </a>
+                            <div class="post-info">
+                                <div class="post-details">
+                                    <div class="details-icon"></div>
+                                    <i class="bi bi-pen-fill"></i>
+                                    <a href="">
+                                        <div class="username">user2</div>
+                                    </a>
+                                    <div class="post-date">&nbsp;commented 6/22/2023</div>
+                                </div>
+                                <div class="post-description">
+                                    🍩 Indulged in some heavenly pastries today! The pastel-colored macarons were light and delicate, while the flaky croissants melted in my mouth. A sweet tooth's paradise! #PastryLove #TreatYourself
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
