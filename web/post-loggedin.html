@@ -73,8 +73,8 @@
           </div>             
           <div id="body" class="justify mpost"></div>
           <div class="down">
-            <a href="#createPostModal" data-bs-toggle="modal" class="reply">Reply</a>
-            <div class="modal fade" id="createPostModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <a id="reply" class="reply">Reply</a>
+            <div class="modal fade" id="editModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -82,7 +82,7 @@
                   <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    <form action="">
+                    <form id="comment-form">
                       <div>
                         <div class="form-group">
                           <label for="create-post-title">Title:</label>
@@ -115,11 +115,36 @@
                 </div>
               </div>
             </div>
+            <div class="modal fade" id="replyModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel-reply">New Reply</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form id="reply-form">
+                      <div>
+                        <div class="form-group">
+                          <label for="reply-content">Content:</label>
+                          <div id="reply-content" class="editor"></div>
+                          <textarea id="reply-content-input" name="content" style="display: none;"></textarea>
+                        </div>
+                        <div class="create-post-footer">
+                          <button type="button" class="btn btn-secondary" id="close-button-reply" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-secondary" id="publish-button-reply">Publish</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="box2">
+    <div class="box2" id="comments-section">
       <span class="c">Comments</span>
       <div class="up2">
         <div>
