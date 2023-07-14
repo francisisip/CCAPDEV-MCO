@@ -183,16 +183,18 @@ nav {
     display: flex;
     flex-direction: column;
     margin-left: 15px;
+    flex-grow: 1;
 }
 
 .down {
     margin-top: 30px;
 }
 
-.abc {
+.leftnright {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .xyz {
