@@ -93,6 +93,15 @@ function updatePost() {
   date.text(post.date);
   body.text(post.body);
   updateCount();
+
+  if (post.edited) {
+    const editedText = document.createElement("span");
+    editedText.innerHTML = " (edited)";
+    editedText.style.fontStyle = "italic";
+    editedText.style.fontSize = "0.8em";
+    
+    date.append(editedText);
+  }
 }
 
 function updateTextarea() {
@@ -157,19 +166,20 @@ function updateTextarea() {
 quill.on('text-change', updateTextarea);
 
 class Post {
-  constructor(title, user, tag, date, body, count) {
+  constructor(title, user, tag, date, body, count, edited) {
     this.title = title;
     this.user = user;
     this.tag = tag;
     this.date = date;
     this.body = body;
     this.count = count;
+    this.edited = edited;
   }
 }
 
 const post = new Post("Pandemic & Food", "Fishball_Lover39", "Meta", "June 11, 2023 - 11:05 PM", 
 "Filipinos love to eat. Consider that a fact! When the pandemic happened and everyone was forced to stay at home, suddenly everyone became a food blogger. From traditional adobo and sinigang to mouthwatering lechon and halo-halo, our cuisine is a treasure trove of flavors and culinary delights. Being confined to our homes gave us the perfect opportunity to explore our passion for cooking and share it with the world. In the virtual realm, social media platforms became flooded with beautifully plated dishes, step-by-step recipe tutorials, and heartfelt stories behind each creation. It was inspiring to witness the creativity and resourcefulness of our fellow Filipinos in the kitchen. People started sharing family recipes, secret ingredients, and even their own twists on classic dishes. Food blogging during the pandemic became more than just a hobby; it became a way to connect and support one another. The online food community flourished with like-minded individuals who were eager to exchange ideas, offer cooking tips, and support local food businesses. It created a sense of unity and camaraderie, even when we were physically apart. As we continue to navigate through these challenging times, let's not forget the joy that food brings us. Whether it's recreating nostalgic dishes from our childhood or discovering new flavors, let's celebrate the resilience of the Filipino spirit through our shared love for food. Together, we can turn our kitchens into creative sanctuaries and our food blogs into platforms of inspiration and connection. So, grab your aprons, sharpen your knives, and let's embark on this culinary journey together. What's your favorite Filipino dish that you've shared on your food blog? Any tips for aspiring food bloggers looking to make their mark in the digital foodie world? Let's keep the foodie revolution alive!",
-999);
+999, false);
 
 updatePost();
 
@@ -190,13 +200,36 @@ edit.addEventListener('click', function handleEditClick() {
   var editModal = new bootstrap.Modal(modal);
   editModal.show();
 
+  function showErrorModal(errorMessage) {
+    const errorModal = new bootstrap.Modal(document.getElementById("errorModal"));
+    const errorMessageElement = document.getElementById("error-message");
+    errorMessageElement.textContent = errorMessage;
+    errorModal.show();
+  }
+
   publish.addEventListener('click', function handlePublishClick(e) {
     e.preventDefault()
+
+    if (titleInput.value.trim() === "" && contentInput.value.trim() === "") {
+      showErrorModal("Title and body cannot be blank.");
+      return;
+    } else if (titleInput.value.trim() === "") {
+      showErrorModal("Title cannot be blank.");
+      return;
+    } else if (contentInput.value.trim() === "") {
+      showErrorModal("Body cannot be blank.");
+      return;
+    }
+
     const publishDate = new Date();
     post.title = titleInput.value;
     post.tag = capitalizeFLetter(tagSelect.value);
     post.date = formatDate(publishDate) + " - " + formatTime(publishDate.getHours(), publishDate.getMinutes());
     post.body = contentInput.value;
+
+    title.css('word-break', 'break-all');
+    body.css('word-break', 'break-all');
+    post.edited = true;
     
     editModal.hide();
     updatePost()
@@ -216,7 +249,21 @@ function handleReplyClick() {
   replyModal.show();
 }
 
+function showErrorModalComment(errorMessage) {
+  const errorModalComment = new bootstrap.Modal(document.getElementById("commentErrorModal"));
+  const errorMessageElement = document.getElementById("comment-error-message");
+  errorMessageElement.textContent = errorMessage;
+  errorModalComment.show();
+}
+
 newReply.addEventListener('click', function handleNewReplyClick() {
+
+  if (replyQuill.getText().trim() === "") {
+    showErrorModalComment("Comment cannot be blank.");
+    return;
+  }
+
+
   const replyDate = new Date();
 
   var username = post.user;
