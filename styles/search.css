@@ -210,12 +210,17 @@ nav {
     left: 245px;
 }
 
-.filter-dropdown a {
-    color: black;
+.filter-dropdown button {
+    border: none;
     padding: 12px 16px;
-    text-decoration: none;
+    width: 100%;
     display: block;
-  }
+    transition: background-color 0.3s ease;
+}
+
+.filter-dropdown button:hover {
+    background-color: var(--primary);
+}
 
 .filter-btn-container:hover .filter-dropdown{
     display: block;
@@ -226,7 +231,7 @@ nav {
 }
 
 .filter-btn:hover {
-    background-color: black;
+    background-color: var(--secondary);
     color: white;
 }
 
