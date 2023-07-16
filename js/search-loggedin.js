@@ -218,7 +218,7 @@ function addPost(newPost) {
 		  tagName = "bi-question-circle-fill";
 		  break;
 		case "Meme":
-		  tagName = "bi-question-circle-fill";
+		  tagName = "bi-emoji-laughing-fill";
 		  break;
 		case "Meta":
 		  tagName = "bi-lightbulb-fill";
