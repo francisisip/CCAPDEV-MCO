@@ -24,8 +24,6 @@ header {
     color: white;
     position: sticky;
     width: 100vw;
-    max-height: 100;
-    max-width: 100 !important;
     min-width: 1000px !important;
     top: 0;
     padding-right: 200px;
@@ -682,4 +680,31 @@ input[type="checkbox"]:checked +label {
 
 .formargin1{
     margin-left: 30px;
+}
+
+#close-button:hover {
+    background-color: white;
+    color: #1e2328;
+    outline: 1px solid #1e2328;
+    border-color: #1e2328;
+}
+
+/*SEE MORE BUTTON*/
+#see-more {
+    background-color: #1e2328;
+    color: white;
+    width: 7rem;
+    margin-bottom: 15px;
+}
+
+#see-more:hover {
+    background-color: white;
+    color: #1e2328;
+    outline: 1px solid #1e2328;
+    border-color: #1e2328;
+}
+
+.see-more-container {
+     display: flex;
+     justify-content: center;
 }
